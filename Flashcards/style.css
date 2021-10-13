@@ -1,0 +1,87 @@
+p,
+h1 {
+    font-family: 'Ephesis', cursive;
+}
+
+.h-tittle {
+    text-align: center;
+    color: bisque;
+    text-shadow: 1px 0 1px #000,
+    0 1px 1px #000,
+    -1px 0 1px #000,
+    0 -1px 1px #000;
+    margin-top: 3%;
+    font-size: 40px;
+}
+
+.Quiz-area {
+    background-image: url("world.png");
+    display: grid;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.card {
+    display: flex;
+    width: 150px;
+    height: 150px;
+    background-color: bisque;
+    margin: 15px 15px;
+    border-radius: 20px;
+    justify-content: center;
+}
+
+.card {
+    transition: all 1s 0s ease;
+    transform-style: preserve-3d;
+    float: left;
+}
+
+.card:hover {
+    position: relative;
+    opacity: 1;
+    transform: scale(1.1); /*вот так*/
+    transform: rotateY(180deg);
+}
+
+.front, .back {
+    align-items: center;
+    display: flex;
+    font-size: 18px;
+    height: 100%;
+    justify-content: center;
+    width: 100%;
+}
+
+.front, .back {
+
+    backface-visibility: hidden;
+}
+
+.back {
+    transform: rotateY(180deg);
+    position: absolute;
+}
+
+.back {
+    background: linear-gradient(90deg, #00C9FF 0%, #92FE9D 100%);
+    border-radius: 20px;
+
+}
+
+.question {
+    align-items: center;
+    display: flex;
+    text-align: center;
+}
+
+.field {
+    width: 550px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 5% auto 10% auto;
+}
+
+.Quiz-area {
+    background-image: url("world.png");
+}
